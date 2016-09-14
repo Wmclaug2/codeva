@@ -1,15 +1,199 @@
-/* Coolors Exported Palette - coolors.co/258ea6-61988e-000000-ffffff-273c2c */
+// ********************
 
-/* HSL */
-$color1: hsla(191%, 64%, 40%, 1);
-$color2: hsla(169%, 22%, 49%, 1);
-$color3: hsla(0%, 0%, 0%, 1);
-$color4: hsla(0%, 0%, 100%, 1);
-$color5: hsla(134%, 21%, 19%, 1);
+// Imports
 
-/* RGB */
-$color1: rgba(37, 142, 166, 1);
-$color2: rgba(97, 152, 142, 1);
-$color3: rgba(0, 0, 0, 1);
-$color4: rgba(255, 255, 255, 1);
-$color5: rgba(39, 60, 44, 1);
+// ********************
+@import "compass/css3",
+"_mixins",
+"_bootstrap",
+'https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700';
+
+// ********************
+
+// Palette Colors
+
+// ********************
+
+// // HSL
+
+// $color1: hsla(191%, 64%, 40%, 1);
+// $color2: hsla(169%, 22%, 49%, 1);
+// $color3: hsla(0%, 0%, 0%, 1);
+// $color4: hsla(0%, 0%, 100%, 1);
+// $color5: hsla(134%, 21%, 19%, 1);
+
+// // RGB
+
+// $Cyan Cornflower Blue: rgba(37, 142, 166, 1);
+// $Desaturated Cyan: rgba(97, 152, 142, 1);
+// $Black: rgba(0, 0, 0, 1);
+// $White: rgba(255, 255, 255, 1);
+// $Dark Green: rgba(39, 60, 44, 1);
+
+
+// ********************
+
+// Page Wrapper / Base
+
+// ********************
+
+.page-wrapper{
+	height:100%;
+	line-height:1.5;
+	margin-bottom:50px;
+	width:100%;
+}
+.main-page{
+	// margin-bottom:100px;
+}
+// ********************
+
+// Header
+
+// ********************
+
+header{
+	background:#258EA6 url('../img/texture.png') top center repeat;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	margin:0 auto 20px auto;
+	position:relative;
+	width:75%;
+	a{
+		color:#fefefe;
+		transition:.3s ease-in-out;
+		&:hover{
+			color:#111;
+			text-decoration:none;
+		}
+	}
+	.navbar{
+		margin:5px;
+		position:absolute;
+	}
+
+	ul{
+		bottom:0;
+		display:inline;
+		right:10px;
+	}
+	li{
+		background-color:rgba(97, 152, 142, .6);
+		border-radius:5px;
+		font-family:Raleway,serif;
+		font-size:22px;
+		padding:10px;
+		transition:.3s ease-in-out;
+		&:hover{
+			background-color:rgba(67, 152, 142, .8);
+		}
+	}
+	h2{
+		position:absolute;
+		top:0;
+	}
+
+	#brand-logo{
+		background-color:black;
+		border-radius:50%;
+		color:white;
+		display:inline-block;
+		font-family:Raleway,sans-serif;
+		height:225px;
+		left:50%;
+		margin:10px auto 10px auto;
+		position:relative;
+		transform:translate(-50%,0);
+		transition:.5s ease-in-out;
+		width:225px;
+		& h1{
+			left: 50%;
+		    margin-right: -50%;
+			position:absolute;
+		    top: 50%; 	   
+		    transform: translate(-50%, -100%);
+		}
+		&:hover{
+			background-color:white;
+			color:black;
+		}
+	}
+}
+
+article{
+	margin:0 auto;
+	width:75%;
+	h4{
+		display:block;
+		margin:10px auto;
+		padding:20px;
+	}
+	.support{
+		padding:20px;
+		position:relative;
+		.support-header{
+			font-family:Montserrat, sans-serif;
+			margin-bottom:30px;
+			text-align:center;
+		}
+		img.support-image{
+			border-radius:10px;
+			display:block;
+			margin:30px auto;
+		
+		}
+		.support-buttons{
+			text-align:center;
+			text-decoration:none;
+	
+		}
+		.subscribe{
+			a{
+				color:#FEFEFE;
+				font-family:Raleway, sans-serif;
+				font-size:22px;
+				&:hover{
+					// color:black;
+					text-decoration:none;
+				}
+			}
+			background-color:#273C2C;
+			border:1px solid#273C2C;
+			border-radius:5px;
+			box-shadow: 0px 1px 3px black;
+			margin-right:20px;
+			padding:10px;
+			transition:.3s ease-in-out;
+			&:hover{
+				background-color:rgba(39, 100, 44, .8);
+				color:black;
+				text-decoration:none;
+			}
+		}
+		.donate{
+			background-color:#61988E;
+			border:1px solid #61988E;
+			@extend .subscribe;
+			&:hover{
+				background-color:rgba(67, 152, 162, .8);
+			}
+		}
+		.contact {
+			box-sizing:border-box;
+			margin-bottom:30px;
+		}
+		.awards{
+			display:block;
+			margin:50px auto;
+		}
+
+
+	}
+}
+
+.divider{
+	border:1px solid #AAA;
+	height:auto;
+	margin:20px auto;
+	width:80%;
+}
