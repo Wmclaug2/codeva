@@ -30,6 +30,10 @@ article{
 		&.current-init{
 			display:inline-block;
 			float:left;
+			@include bp-small{
+				float:none;
+				margin:0 auto;
+			}
 			@include mobile{
 				float:none;
 				margin:0 auto;
@@ -38,6 +42,10 @@ article{
 		&.training-schedules{
 			display:inline-block;
 			float:right;
+			@include bp-small{
+				float:none;
+				margin:0 auto;
+			}
 			@include mobile{
 				float:none;
 				margin:0 auto;
@@ -47,9 +55,15 @@ article{
 	.init-container{
 		height:auto;
 		margin:10px auto;
-		width:60%;
-		@include mobile{
+		width:70%;
+		@include bp-medium{
 			width:90%;
+		}
+		@include bp-small{
+			width:90%
+		}
+		@include mobile{
+			width:95%;
 		}
 	}
 	.our-work{

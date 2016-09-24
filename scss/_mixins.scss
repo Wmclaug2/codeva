@@ -34,19 +34,19 @@
 // ****************************
 
 @mixin bp-large {
-  @media only screen and (max-width: 60em) {
+  @media only screen and (max-width: 1200px) {
     @content;
   }
 }
 
 @mixin bp-medium {
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 1050px) {
     @content;
   }
 }
 
 @mixin bp-small {
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 950px) {
     @content;
   }
 }

@@ -139,7 +139,7 @@ header{
 		position:relative;
 		@include mobile{
 			float:none;
-			margin:5px auto;
+			margin:0 auto;
 			text-align:center;
 		}
 
@@ -156,6 +156,9 @@ header{
 		.navbar{
 				display:inline-block;
 				margin:5px;
+				@include mobile{
+					margin:2px;
+				}
 				li ul.submenu{
 					background-color:rgba(97, 152, 142, .6);
 					border-radius:5px;
@@ -188,6 +191,9 @@ header{
 					font-size:1.375em;
 					margin-right:5px;
 					transition:.4s ease-in-out;
+					@include mobile{
+						margin-right:2px;
+					}
 					.submenu li{
 						max-height:0;
 						transition:max-height .15s ease-out;
