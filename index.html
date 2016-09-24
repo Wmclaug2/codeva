@@ -15,18 +15,46 @@
 				<h1 id='brand'>&lt; CodeVA &gt;</h1>
 			</div>
 		</a>
-		
-			<ul class='navbar list-unstyled list-inline'>
-				<li><a href='#'>Educators</a></li>
-				<li><a href='#'>Families</a></li>
-				<li><a href='#'>News</a></li>
+		<div class='social-media'>
+			<ul class='list-inline list-unstyled'>
+				<li><a href='https://twitter.com/codeVirginia' target='_blank'><i class="fa fa-twitter-square"></i></a></li>
+				<li><a href='https://www.facebook.com/CodeVirginia.org/' target='_blank'><i class="fa fa-facebook-official"></i></a></li>
+				<li><a href='https://www.instagram.com/eurekaworkshoprva/' target='_blank'><i class="fa fa-instagram"></i></a></li>
+				<li><a href='https://www.pinterest.com/beakknits/teach-computer-science/' target='_blank'><i class="fa fa-pinterest-square"></i></a></li>
+				<li><a href='https://plus.google.com/+CodevirginiaOrgrva' target='_blank'><i class="fa fa-google-plus-square"></i></a></li>
 			</ul>
+		</div>
+			<!-- header navigation -->
+			<nav>
+				<ul class='navbar list-unstyled list-inline'>
+					<li><a href='#'>Educators</a>
+						<ul class='submenu list-unstyled'>
+							<li class='submenu-item'><a href='#'>Teacher Training</a></li>
+							<div class='divider'></div>
+							<li class='submenu-item'><a href='#'>VA CS Honor Society</a></li>
+							<div class='divider'></div>
+							<li class='submenu-item'><a href='#'>Teacher's Lounge</a></li>
+							<div class='divider'></div>
+							<li class='submenu-item'><a href='#'>Privacy</a></li>
+						</ul>
+					</li>
+					<li><a href='#'>Families</a>
+						<ul class='submenu list-unstyled'>
+							<li class='submenu-item'><a href='#'>FAQ</a></li>
+							<div class='divider'></div>
+							<li class='submenu-item'><a href='#'>Afterschool Programs</a></li>
+						
+						</ul>
+					</li>
+					<li><a href='#'>News</a></li>
+				</ul>
+			</nav>
 	</header>
 	<article class='main-page '>
 		<h4 class=' well text-center'>CodeVA is a 501(c)(3)  non-profit built to promote computer science and computer programming all across Virginia. We are grateful for the partnership we have developed with Code.org's team and look forward to making computer science education a reality for our communities.</h4>
 		<div class='divider'></div>
 		<div class='support'>
-			<h2 class='support-header'>Support Computer Science Education in Virginia with your donation!</h2>
+			<h2 class='support-header text-center'>Support Computer Science Education in Virginia with your donation!</h2>
 			<img class = 'support-image' src='img/se.png' alt='Future Software Engineers'>
 			<div class='support-buttons'>	
 				<button class='subscribe btn btn-primary'><a href='http://codevirginia.us8.list-manage.com/subscribe/post?u=740d55017470cd823984bdb62&id=af44852423'>Subscribe</a></button>
@@ -37,12 +65,16 @@
 		<div class='contact'>
 			<h3 class='contact-header text-center'>Contact</h3>
 			<ul class='contact-list list-unstyled text-center'>
-				<li><i class='glyphicon glyphicon-envelope'></i> info@codevirginia.org</li>
+				<li><i class='glyphicon glyphicon-envelope'></i><a href='mailto:info@codevirginia.org'> info@codevirginia.org</a></li>
 				<li><i class='glyphicon glyphicon-phone'></i> 804-727-9817</li>
 				<li><i class='glyphicon glyphicon-map-marker'></i> <a href='https://www.google.com/maps/place/300+E+Broad+St,+Richmond,+VA+23219/@37.5442382,-77.4410512,17z/data=!3m1!4b1!4m5!3m4!1s0x89b1113b83109b09:0xc2f476ebbe4f5a11!8m2!3d37.544234!4d-77.4388625'>300 E Broad St, Richmond VA 23219</a></li>
 			</ul>
 		</div>
 		<div class='divider'></div>
+		<div class='forVA text-center'>
+			<img src = 'img/va.png' alt='Open CompSci Jobs in VA'>
+		</div>
+
 		<div class='awards text-center'>
 			<img class='award ' src='img/galafinal.png' alt='gala final award'>
 			<img class='award col-md-offset-1' src='img/socialinnovation.jpeg' alt='social innovation award'>
@@ -52,6 +84,19 @@
 	</article>
 
 	<footer>
+		<div class='social-media text-center'>
+			<ul class='list-inline list-unstyled'>
+				<li><a href='https://twitter.com/codeVirginia' target='_blank'><i class="fa fa-twitter-square"></i></a></li>
+				<li><a href='https://www.facebook.com/CodeVirginia.org/' target='_blank'><i class="fa fa-facebook-official"></i></a></li>
+				<li><a href='https://www.instagram.com/eurekaworkshoprva/' target='_blank'><i class="fa fa-instagram"></i></a></li>
+				<li><a href='https://www.pinterest.com/beakknits/teach-computer-science/' target='_blank'><i class="fa fa-pinterest-square"></i></a></li>
+				<li><a href='https://plus.google.com/+CodevirginiaOrgrva' target='_blank'><i class="fa fa-google-plus-square"></i></a></li>
+			</ul>
+		</div>
+		<div class='support-buttons'>	
+			<button class='subscribe btn btn-primary'><a href='http://codevirginia.us8.list-manage.com/subscribe/post?u=740d55017470cd823984bdb62&id=af44852423'>Subscribe</a></button>
+			<button class='donate btn btn-success'><a href='http://www.paypal.com'>Donate</a></button>	
+		</div>
 	<h3 class='text-center'>CodeVA Is A 501(C)3 Non-Profit * Richmond, VA</h3>
 	</footer>
 </div>
@@ -63,5 +108,6 @@
 <!-- Necessary Scripts for Bootstrap -->
 <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/26141701a4.js"></script>
 </body>
 </html>
