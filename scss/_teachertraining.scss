@@ -1,0 +1,62 @@
+@import "compass/css3",
+"mixins";
+article{
+	line-height:1.5;
+	img.training-img{
+		border-radius:10px;
+		display:block;
+		margin:30px auto;
+		max-width: 80%;
+		text-align:center;
+	}
+	.clear{
+		clear:both;
+	}
+	.initiatives{
+		margin:0 auto;
+		margin-bottom:10px;
+		max-width:65%;
+	
+		@include mobile{
+			max-width:100%;
+		}
+
+		ul{
+			margin-bottom:30px;
+		}
+		li{
+			font-size:1.5em;
+		}
+		&.current-init{
+			display:inline-block;
+			float:left;
+			@include mobile{
+				float:none;
+				margin:0 auto;
+			}
+		}
+		&.training-schedules{
+			display:inline-block;
+			float:right;
+			@include mobile{
+				float:none;
+				margin:0 auto;
+			}
+		}
+	}
+	.init-container{
+		height:auto;
+		margin:10px auto;
+		width:60%;
+		@include mobile{
+			width:90%;
+		}
+	}
+	.our-work{
+		margin:0 auto;
+		max-width:60%;
+		@include mobile{
+			max-width:100%;
+		}
+	}
+}

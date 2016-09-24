@@ -6,6 +6,7 @@
 @import "compass/css3",
 "_mixins",
 "_bootstrap",
+"_teachertraining",
 'https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700';
 
 // ********************
@@ -39,7 +40,6 @@
 .page-wrapper{
 	height:100%;
 	line-height:1.5;
-	margin-bottom:50px;
 	width:100%;
 }
 .main-page{
@@ -228,6 +228,7 @@ header{
 
 // ********************
 article{
+	line-height:1.5;
 	margin:0 auto;
 	width:75%;
 	@include mobile{
@@ -362,7 +363,12 @@ article{
 
 
 footer{
-	margin-bottom:30px;
+	background-color:#CCC;
+	bottom:0;
+	border-top:1px solid #dedede;
+	padding-bottom:30px;
+	margin-top:30px;
+	padding-top:20px;
 	.social-media{
 		margin-bottom:20px;
 		i{

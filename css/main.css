@@ -7335,10 +7335,78 @@ button.close {
     display: none !important;
   }
 }
+article {
+  line-height: 1.5;
+}
+article img.training-img {
+  border-radius: 10px;
+  display: block;
+  margin: 30px auto;
+  max-width: 80%;
+  text-align: center;
+}
+article .clear {
+  clear: both;
+}
+article .initiatives {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 65%;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  article .initiatives {
+    max-width: 100%;
+  }
+}
+article .initiatives ul {
+  margin-bottom: 30px;
+}
+article .initiatives li {
+  font-size: 1.5em;
+}
+article .initiatives.current-init {
+  display: inline-block;
+  float: left;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  article .initiatives.current-init {
+    float: none;
+    margin: 0 auto;
+  }
+}
+article .initiatives.training-schedules {
+  display: inline-block;
+  float: right;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  article .initiatives.training-schedules {
+    float: none;
+    margin: 0 auto;
+  }
+}
+article .init-container {
+  height: auto;
+  margin: 10px auto;
+  width: 60%;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  article .init-container {
+    width: 90%;
+  }
+}
+article .our-work {
+  margin: 0 auto;
+  max-width: 60%;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  article .our-work {
+    max-width: 100%;
+  }
+}
+
 .page-wrapper {
   height: 100%;
   line-height: 1.5;
-  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -7500,6 +7568,7 @@ header h2 {
 }
 
 article {
+  line-height: 1.5;
   margin: 0 auto;
   width: 75%;
 }
@@ -7594,7 +7663,12 @@ article .support .awards {
 }
 
 footer {
-  margin-bottom: 30px;
+  background-color: #CCC;
+  bottom: 0;
+  border-top: 1px solid #dedede;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  padding-top: 20px;
 }
 footer .social-media {
   margin-bottom: 20px;
