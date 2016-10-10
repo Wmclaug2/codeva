@@ -5,9 +5,9 @@
 // ****************************
 
 @mixin mobile {
-	@media only screen and (min-width:0px) and (max-width:825px){
-		@content;
-	}
+  @media only screen and (min-width:0px) and (max-width:825px){
+    @content;
+  }
 }
 
 // ****************************
@@ -34,19 +34,19 @@
 // ****************************
 
 @mixin bp-large {
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 60em) {
     @content;
   }
 }
 
 @mixin bp-medium {
-  @media only screen and (max-width: 1050px) {
+  @media only screen and (max-width: 40em) {
     @content;
   }
 }
 
 @mixin bp-small {
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 30em) {
     @content;
   }
 }
@@ -122,3 +122,22 @@
   clip: rect(0, 0, 0, 0);
   position: absolute;
 }
+
+
+// ****************************
+
+// * Ratios - Returns the ratio for specified dimensions. Use mixin to include and have embedded content resize responsively.
+
+// ****************************
+
+// @function ratio($width, $height){
+//   return percentage( $height / $width);
+// }
+
+// @mixin generateRatios($width, $height, $prefix: "ratio-"){
+//   $class-name: $prefix + $width + "x" + $height;
+ 
+//   .#{$class-name}{
+//     padding-bottom: ratio($width, $height);
+//   }
+// }

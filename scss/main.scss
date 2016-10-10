@@ -40,10 +40,11 @@
 .page-wrapper{
 	height:100%;
 	line-height:1.5;
+	position:relative;
 	width:100%;
 }
 .main-page{
-	// margin-bottom:100px;
+	
 }
 // ********************
 
@@ -52,8 +53,8 @@
 // ********************
 header{
 	background:#258EA6 url('../img/texture.png') top center repeat;
-	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 	margin:0px auto 20px auto;
 	padding-top:20px;
 	position:relative;
@@ -82,8 +83,8 @@ header{
 		z-index:1;
 		& h1{
 			left: 50%;
-		    margin-right: -50%;
-			position:absolute;
+  		    margin-right: -50%;
+			position: absolute;
 		    top: 50%; 	   
 		    transform: translate(-50%, -100%);
 		}
@@ -101,9 +102,9 @@ header{
 
 	// ********************
 	.social-media{
+		// margin:5px;
 		bottom:1px;
 		left:15px;
-		// margin:5px;
 		position:absolute;
 		li{
 			a{
@@ -179,7 +180,7 @@ header{
 						background-color:rgba(97, 152, 142, .8);
 					}
 				}
-				li:hover ul.submenu{
+				li:hover ul.submenu, li:active ul.submenu{
 					display:block;
 					height:auto;
 					opacity:1;
@@ -192,7 +193,9 @@ header{
 					font-family:Raleway,serif;
 					font-size:1.375em;
 					margin-right:5px;
+					position:relative;
 					transition:.4s ease-in-out;
+					z-index:1;
 					@include mobile{
 						margin-right:2px;
 					}
@@ -232,12 +235,12 @@ header{
 }
 // ********************
 
-// Article
+// Main Page
 
 // ********************
 article{
 	line-height:1.5;
-	margin:0 auto;
+	margin:0 auto 250px auto;
 	width:75%;
 	@include mobile{
 		width:95%;
@@ -288,17 +291,17 @@ article{
 			margin:30px auto;
 			width:80%;
 			@include mobile{
-				width:90%;
+				width:98%;
 			}
 		
 		}
-		
 		// ********************
 
 		// Support CompSci
 
 		// ********************
 		.forVA{
+			max-width:100%;
 			img{
 				border:1px solid black;
 				margin:20px;
@@ -325,6 +328,129 @@ article{
 		}
 	}
 }
+// ********************
+
+// Current Initiatives Page
+
+// ********************
+.current-initiatives{
+	margin:0 auto 275px auto;
+	width:75%;
+	@include mobile{
+		width:98%;
+	}
+	.bold{
+		font-weight:bold;
+	}
+	.iframe-container-16x9{
+		display:block;
+		height:0;
+		margin:10px auto 20px auto;
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;	
+		z-index:0;
+		iframe{		
+			display:block;
+			height:100%;
+			left:0;
+			margin:0 auto;
+			position:absolute;
+			top:0;
+			width:100%;
+			z-index:-1;
+		}
+	}
+	#elementary-initiatives{
+		margin:0 auto;
+		text-align:justify;
+		width:80%;
+		@include mobile{
+			width:98%;
+		}
+		h3{
+			margin-top:5px;
+			padding-top:5px;
+		}
+		h4{
+			margin:0px;
+			padding:10px 0;
+		}
+		img{
+			border-radius:10px;
+			box-shadow: 2px 2px 6px black;
+			display:block;
+			margin:20px auto;
+			width:75%;
+		}
+		div.well{
+			padding:10px 19px;
+		}
+	}
+	#middle-initiatives{
+		@extend #elementary-initiatives;
+		ul{
+			padding-left:30px;
+		}
+	}
+	#high-initiatives{
+		@extend #elementary-initiatives;
+	}
+
+}
+// ********************
+
+// Honor Society Page
+
+// ********************
+.honor-society{
+	margin:0 auto 300px auto;
+	width:50%;
+	@include mobile{
+		width:98%;
+	}
+	h2{
+		padding-top:20px;
+		text-align:center;
+	}
+	img{
+		display:block;
+		margin:20px auto;
+		transition:.3s ease-in-out;
+		&:hover, &:active{
+			transform: scale(1.05) rotate(360deg);
+		}
+	}
+}
+
+// ********************
+
+// About Us
+
+// ********************
+.about-us{
+	padding-top:10px;
+	width:60%;
+	@include mobile{
+		width:98%;
+	}
+	h2{
+
+	}
+	.privacy{
+		list-style-type:upper-roman;
+		margin-left:10px;
+	}
+	li{
+		padding:5px;
+	}
+	p.notice{
+		text-align:justify;
+		@include mobile{
+			text-align:left;
+		}
+	}
+}
 
 // ********************
 
@@ -338,8 +464,8 @@ article{
 	}
 	.subscribe{
 			background-color:rgba(39, 100, 44, .8);
-			border:1px rgba(39, 100, 44, .8);
 			border-radius:5px;
+			border:1px rgba(39, 100, 44, .8);
 			box-shadow: 0px 1px 3px black;
 			margin-right:20px;
 			padding:10px;
@@ -370,13 +496,22 @@ article{
 		}
 
 
+// ********************
+
+// Footer
+
+// ********************
+
 footer{
 	background-color:#CCC;
-	bottom:0;
 	border-top:1px solid #dedede;
-	padding-bottom:30px;
+	bottom:0;
+	left:0;
 	margin-top:30px;
+	padding-bottom:30px;
 	padding-top:20px;
+	position:absolute;
+	right:0;
 	.social-media{
 		margin-bottom:20px;
 		i{
