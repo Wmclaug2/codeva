@@ -7534,7 +7534,8 @@ header nav .navbar {
 }
 @media only screen and (min-width: 0px) and (max-width: 825px) {
   header nav .navbar {
-    margin: 2px;
+    margin: 2px auto;
+    width: 100%;
   }
 }
 header nav .navbar li ul.submenu {
@@ -7576,7 +7577,7 @@ header nav .navbar li {
 }
 @media only screen and (min-width: 0px) and (max-width: 825px) {
   header nav .navbar li {
-    margin-right: 2px;
+    margin-right: 1px;
   }
 }
 header nav .navbar li .submenu li {
