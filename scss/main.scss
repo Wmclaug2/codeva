@@ -154,6 +154,9 @@ header{
 		a{
 			display:inline-block;
 			padding:10px;
+			@include mobile{
+				padding:5px;
+			}
 		}
 	
 		.navbar{
@@ -199,6 +202,9 @@ header{
 					z-index:1;
 					@include mobile{
 						margin-right:1px;
+						i{
+							font-size:.5em;
+						}
 					}
 					i{
 						font-size:.75em
