@@ -7793,6 +7793,18 @@ article .support .awards {
   }
 }
 
+.faq {
+  width: 60%;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .faq {
+    width: 98%;
+  }
+}
+.faq h2 {
+  padding: 20px;
+}
+
 .support-buttons {
   margin-bottom: 10px;
   text-align: center;
