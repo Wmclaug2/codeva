@@ -7805,6 +7805,46 @@ article .support .awards {
   padding: 20px;
 }
 
+.afterschool-programs {
+  margin: 0 auto 700px auto;
+  width: 50%;
+}
+.afterschool-programs .bold {
+  font-weight: bold;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .afterschool-programs {
+    margin: 0 auto 275px auto;
+    width: 98%;
+  }
+}
+.afterschool-programs .fam-img-container {
+  margin-top: 20px;
+}
+.afterschool-programs img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px black;
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+}
+.afterschool-programs img.fam-img {
+  float: left;
+  margin: 5px;
+  transition: .3s ease-in-out;
+  width: 30%;
+}
+.afterschool-programs img.fam-img:hover {
+  transform: scale(1.05);
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .afterschool-programs img.fam-img {
+    float: none;
+    margin: 10px auto;
+    width: 85%;
+  }
+}
+
 .support-buttons {
   margin-bottom: 10px;
   text-align: center;

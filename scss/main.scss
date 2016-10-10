@@ -486,7 +486,39 @@ article{
 
 // ********************
 .afterschool-programs{
-
+	margin:0 auto 700px auto;
+	width:50%;
+	.bold{
+		font-weight:bold;
+	}
+	@include mobile{
+		margin: 0 auto 275px auto;
+		width:98%;
+	}
+	.fam-img-container{
+		margin-top:20px;
+	}
+	img{
+		border-radius:10px;
+		box-shadow: 2px 2px 6px black;
+		display:block;
+		margin:20px auto;
+		width:70%;
+		&.fam-img{
+			float:left;
+			margin:5px;
+			transition:.3s ease-in-out;
+			width:30%;
+			&:hover{
+				transform:scale(1.05);
+			}
+			@include mobile{
+				float:none;
+				margin:10px auto;
+				width:85%;
+			}
+		}
+	}
 }
 
 // ********************
