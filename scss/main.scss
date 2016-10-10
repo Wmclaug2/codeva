@@ -182,14 +182,19 @@ header{
 					visibility:none;
 					@include mobile{
 						background-color:rgba(97, 152, 142, .8);
+						left:-1000px;
+						top:48px;
 					}
 				}
 				li:hover ul.submenu, li:active ul.submenu{
 					display:block;
 					height:auto;
 					opacity:1;
-					top:48px;
+					top:40px;
 					visibility:visible;
+					@include mobile{
+						left:5px;
+					}
 				}			
 				li{
 					background-color:rgba(97, 152, 142, .6);
