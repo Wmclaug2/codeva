@@ -7583,7 +7583,6 @@ header nav .navbar li {
   border-radius: 5px;
   font-family: Raleway,serif;
   font-size: 1.375em;
-  margin-right: 5px;
   position: relative;
   transition: .4s ease-in-out;
   z-index: 1;
@@ -7646,12 +7645,13 @@ article h4 {
   padding: 20px;
 }
 article .support {
-  padding: 20px;
+  padding: 10px;
   position: relative;
 }
 article .support .support-header {
   font-family: Montserrat, sans-serif;
   margin-bottom: 30px;
+  margin-top: 0;
   text-align: center;
 }
 article .support img.support-image {
@@ -7834,7 +7834,7 @@ article .support .awards {
 
 footer {
   background-color: #CCC;
-  border-top: 1px solid #dedede;
+  border-top: 3px solid #dedede;
   bottom: 0;
   left: 0;
   margin-top: 30px;
