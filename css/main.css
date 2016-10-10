@@ -7436,7 +7436,7 @@ header {
   background: #258EA6 url("../img/texture.png") top center repeat;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  margin: 0 auto 20px auto;
+  margin: 20px auto 20px auto;
   position: relative;
   width: 90%;
 }
@@ -7458,6 +7458,7 @@ header #brand-logo {
   transform: translate(-50%, 0);
   transition: .5s ease-in-out;
   width: 225px;
+  z-index: 1;
 }
 header #brand-logo h1 {
   left: 50%;
