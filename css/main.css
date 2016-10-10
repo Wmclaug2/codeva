@@ -7562,7 +7562,7 @@ header nav .navbar li ul.submenu {
   header nav .navbar li ul.submenu {
     background-color: rgba(97, 152, 142, 0.8);
     left: -1000px;
-    top: 48px;
+    top: 40px;
   }
 }
 header nav .navbar li:hover ul.submenu, header nav .navbar li:active ul.submenu {
