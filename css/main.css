@@ -7554,19 +7554,29 @@ header nav .navbar li ul.submenu {
   margin-left: -5px;
   opacity: 0;
   position: absolute;
+  top: -1000px;
   transition: .3s ease-in-out;
   visibility: none;
-  background-color: rgba(97, 152, 142, 0.8);
-  left: -1000px;
-  top: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  header nav .navbar li ul.submenu {
+    background-color: rgba(97, 152, 142, 0.8);
+    left: -1000px;
+    top: 40px;
+  }
 }
 header nav .navbar li:hover ul.submenu, header nav .navbar li:active ul.submenu {
   display: block;
   height: auto;
   opacity: 1;
-  top: 40px;
+  top: 45px;
   visibility: visible;
-  left: 5px;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  header nav .navbar li:hover ul.submenu, header nav .navbar li:active ul.submenu {
+    left: 5px;
+    top: 40px;
+  }
 }
 header nav .navbar li {
   background-color: rgba(97, 152, 142, 0.6);
