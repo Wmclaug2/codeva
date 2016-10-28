@@ -531,6 +531,9 @@ article{
 	display:block;
 	margin:0 auto 1400px auto;
 	width:90%;
+	@include medium{
+		margin-bottom:300px;
+	}
 	.twit-cont{
 		float:right;
 		margin-right:10px;
