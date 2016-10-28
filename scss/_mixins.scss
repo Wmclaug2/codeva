@@ -10,6 +10,12 @@
   }
 }
 
+@mixin  medium {
+  @media only screen and (min-width:0px) and (max-width:1024px){
+    @content;
+  }
+}
+
 // ****************************
 
 // * Calculates Rem font-size - relative to HTML font-size
