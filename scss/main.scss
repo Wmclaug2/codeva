@@ -539,18 +539,17 @@ article{
 			display:block;
 			float:none;
 			margin:0 auto;
-			width:500px;
+			width:90px;
 		}
 		
 		a{
 			float:right;
-			
 			width:50%;
 			@include medium{
 				display:block;
 				float:none;
 				margin:0 auto !important;
-				width:100%;
+				width:90%;
 			}
 		}
 	}
@@ -577,6 +576,7 @@ article{
 				position:absolute;
 				top:0;
 				transform:translate(-50%,0);
+				width:90%;
 				z-index:-1;
 			}
 		}
