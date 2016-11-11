@@ -7345,9 +7345,6 @@ article img.training-img {
   max-width: 80%;
   text-align: center;
 }
-article .clear {
-  clear: both;
-}
 article .initiatives {
   margin: 0 auto;
   margin-bottom: 10px;
@@ -7364,39 +7361,33 @@ article .initiatives ul {
 article .initiatives li {
   font-size: 1.5em;
 }
-article .initiatives.current-init {
-  display: inline-block;
-  float: left;
-}
 @media only screen and (max-width: 30em) {
   article .initiatives.current-init {
-    float: none;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 10px auto;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 825px) {
   article .initiatives.current-init {
-    float: none;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 0px auto;
   }
-}
-article .initiatives.training-schedules {
-  display: inline-block;
-  float: right;
 }
 @media only screen and (max-width: 30em) {
   article .initiatives.training-schedules {
-    float: none;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 10px auto;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 825px) {
   article .initiatives.training-schedules {
-    float: none;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 0px auto;
   }
 }
 article .init-container {
+  display: flex;
+  flex-wrap: wrap;
   height: auto;
   margin: 10px auto;
   width: 70%;
