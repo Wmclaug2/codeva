@@ -7666,14 +7666,6 @@ article .support img.support-image {
     width: 98%;
   }
 }
-article .support .forVA {
-  max-width: 100%;
-}
-article .support .forVA img {
-  border: 1px solid black;
-  margin: 20px;
-  max-width: 50%;
-}
 article .support .contact {
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -7681,6 +7673,14 @@ article .support .contact {
 article .support .awards {
   display: block;
   margin: 50px auto;
+  padding: 20px;
+  width: 70%;
+}
+
+.state-jobs img {
+  border-radius: 10px;
+  margin: 20px;
+  width: 89%;
 }
 
 .current-initiatives {
@@ -7846,63 +7846,31 @@ article .support .awards {
 }
 
 .news {
-  display: block;
-  margin: 0 auto 1400px auto;
-  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 85%;
+}
+.news .divider {
+  display: none;
+  margin: 20px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .news .divider {
+    display: initial;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .news {
+    justify-content: center;
+    margin-bottom: 300px;
+  }
 }
 .news .twit-cont {
-  float: right;
-  margin-right: 10px;
-  width: 45%;
-}
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
-  .news .twit-cont {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    width: 500px;
-  }
-}
-.news .twit-cont a {
-  float: right;
-  width: 50%;
-}
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
-  .news .twit-cont a {
-    display: block;
-    float: none;
-    margin: 0 auto !important;
-    width: 100%;
-  }
+  margin-top: 20px;
 }
 .news .iframe-container-16x9 {
-  float: left;
-  margin-left: 10px;
-  width: 45%;
-}
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
-  .news .iframe-container-16x9 {
-    display: block;
-    height: 900px;
-    float: none;
-    margin: 10px auto 20px auto;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    width: 100%;
-    z-index: 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
-  .news .iframe-container-16x9 iframe {
-    display: block;
-    height: 100%;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translate(-50%, 0);
-    z-index: -1;
-  }
+  margin-top: 20px;
 }
 
 .support-buttons {
