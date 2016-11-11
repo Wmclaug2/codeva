@@ -529,26 +529,59 @@ article{
 
 .news{
 	display:block;
-	margin:0 auto 300px auto;
-	width:70%;
-	.iframe-container-16x9{
-		display:block;
-		height:900px;
-		margin:10px auto 20px auto;
-		overflow:hidden;
-		padding-bottom:56.25%;
-		position:relative;	
-		width:100%;
-		z-index:0;
-		iframe{		
+	margin:0 auto 1400px auto;
+	width:90%;
+	@include medium{
+		margin-bottom:300px;
+	}
+	.twit-cont{
+		float:right;
+		margin-right:10px;
+		width:45%;
+		@include medium{
 			display:block;
-			height:100%;
+			float:none;
 			margin:0 auto;
-			position:absolute;
-			text-align:center;
-			top:0;
+			width:90px;
+		}
+		
+		a{
+			float:right;
+			width:50%;
+			@include medium{
+				display:block;
+				float:none;
+				margin:0 auto !important;
+				width:90%;
+			}
+		}
+	}
+	.iframe-container-16x9{
+		float:left;
+		margin-left:10px;
+		width:45%;
+		@include medium{
+			display:block;
+			height:900px;
+			float:none;
+			margin:10px auto 20px auto;
+			overflow:hidden;
+			padding-bottom:56.25%;
+			position:relative;	
 			width:100%;
-			z-index:-1;
+			z-index:0;
+		}
+		iframe{		
+			@include medium{
+				display:block;
+				height:100%;
+				left:50%;
+				position:absolute;
+				top:0;
+				transform:translate(-50%,0);
+				width:100%;
+				z-index:-1;
+			}
 		}
 	}}
 

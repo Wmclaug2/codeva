@@ -7847,28 +7847,62 @@ article .support .awards {
 
 .news {
   display: block;
-  margin: 0 auto 300px auto;
-  width: 70%;
+  margin: 0 auto 1400px auto;
+  width: 90%;
+}
+.news .twit-cont {
+  float: right;
+  margin-right: 10px;
+  width: 45%;
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .news .twit-cont {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 500px;
+  }
+}
+.news .twit-cont a {
+  float: right;
+  width: 50%;
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .news .twit-cont a {
+    display: block;
+    float: none;
+    margin: 0 auto !important;
+    width: 100%;
+  }
 }
 .news .iframe-container-16x9 {
-  display: block;
-  height: 900px;
-  margin: 10px auto 20px auto;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  width: 100%;
-  z-index: 0;
+  float: left;
+  margin-left: 10px;
+  width: 45%;
 }
-.news .iframe-container-16x9 iframe {
-  display: block;
-  height: 100%;
-  margin: 0 auto;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: -1;
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .news .iframe-container-16x9 {
+    display: block;
+    height: 900px;
+    float: none;
+    margin: 10px auto 20px auto;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .news .iframe-container-16x9 iframe {
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0);
+    z-index: -1;
+  }
 }
 
 .support-buttons {
