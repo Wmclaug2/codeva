@@ -1,0 +1,23 @@
+{
+  "name": "codeva",
+  "version": "1.0.0",
+  "description": "Non-profit codeva site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wmclaug2/codeva.git"
+  },
+  "author": "wes mclaughlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wmclaug2/codeva/issues"
+  },
+  "homepage": "https://github.com/Wmclaug2/codeva#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1"
+  }
+}
