@@ -7535,7 +7535,7 @@ header nav .navbar {
   }
 }
 header nav .navbar li ul.submenu {
-  background-color: rgba(97, 152, 142, 0.6);
+  background-color: rgba(97, 152, 142, 0.8);
   border-radius: 5px;
   border-top-left-radius: 0px;
   box-shadow: 2px 2px 5px #333;
